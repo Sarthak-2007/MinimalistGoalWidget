@@ -4,13 +4,12 @@ plugins {
 }
 
 android {
-    compileSdkVersion 30
-    buildToolsVersion "30.0.3"
+    compileSdkVersion 31  // Make sure to use an appropriate compileSdkVersion
 
     defaultConfig {
-        applicationId "com.example.minimalistgoalwidget"
+        namespace 'com.example.minimalistgoalwidget'  // Add this line
         minSdkVersion 21
-        targetSdkVersion 31  // Update this to 31 or higher
+        targetSdkVersion 31
         versionCode 1
         versionName "1.0"
     }
