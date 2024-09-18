@@ -4,6 +4,8 @@ plugins {
 }
 
 android {
+    namespace 'com.example.minimalistgoalwidget'  // Add this line
+
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
 
@@ -22,13 +24,11 @@ android {
         }
     }
 
-    // Ensuring compatibility with Java 1.8
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
-    // Kotlin compatibility
     kotlinOptions {
         jvmTarget = '1.8'
     }
